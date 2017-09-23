@@ -14,46 +14,51 @@
 </head>
 <body>
 
-	<header class="header container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-5">
-				<h1 id="name">Laura Ward</h1>
+	
+	<header class="header navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h1 id="name" class="navbar-brand">Laura Ward</h1>
 			</div>
-			<nav class="navbar col-xs-12 col-sm-6 col-md-7">
-				<div class="container-fluid">
+			<nav class="nav navbar-nav navbar-right">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html" class="nav-link">About</a></li>
 						<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
 						<li><a href="contact.html" class="nav-link">Contact</a></li>
 					</ul>
-				</div>
+				
 			</nav>
+		</div>
 	</header>
 
-	<div id="center">
+	<div id="center" class="container-fluid">
 		<br>
-		<main class="clearfix">
+		<div class="row">
+			<main class="col-xs-12 col-sm-12 col-md-8">
 			<h2>About Me</h2>
-			<div id="about">
-				<img src="assets/images/people-q-c-200-200-1.jpg" id="wrap-text" alt="stock photo" class="clearfix">
-				<p>I created my first webpage in the mid-90s and shortly thereafter became the de facto webmaster for the administrative department where I worked at Northwestern University.  I built that original site using just html and javascript but a few years later I was building and managing sites using CSS, MySQL and PHP.  Then a career move suddenly ended my days as webmaster, but opened the door to other coding opportunities.  Now I'm hoping to brush off those cobwebs, and merge my past experience with my current expertise to become a full stack web developer.
-				</p>
-				<br>
-			</div>
-		</main>
+				<div id="about">
+					<img src="assets/images/people-q-c-200-200-1.jpg" id="wrap-text" alt="stock photo" class="clearfix">
+					<p>I created my first webpage in the mid-90s and shortly thereafter became the de facto webmaster for the administrative department where I worked at Northwestern University.  I built that original site using just html and javascript but a few years later I was building and managing sites using CSS, MySQL and PHP.  Then a career move suddenly ended my days as webmaster, but opened the door to other coding opportunities.  Now I'm hoping to brush off those cobwebs, and merge my past experience with my current expertise to become a full stack web developer.
+					</p>
+					<br>
+				</div>
+			</main>
 
-		<aside>
-			<h3>Connect with Me</h3>
-			<div id="social">
-				<a href="https://github.com/LauraAWard" target="_blank"><img src="assets/images/if_github_square_black_107109.png" alt="GitHub" class="connect-links"></a>
-				<a href="https://www.linkedin.com/in/laura-ward-b0609b76/" target="_blank"><img src="assets/images/if_linkedin_square_color_107091.png" alt="LinkedIn" class="connect-links"></a>
-				<a href="https://stackoverflow.com/users/8528383/laura-ward" target="_blank"><img src="assets/images/if_stackoverflow_273179.png" alt="StackOverflow" class="connect-links"></a>
-			</div>	
-		</aside>
-		<br>
+			<aside>
+				<h3>Connect with Me</h3>
+				<div id="social">
+					<a href="https://github.com/LauraAWard" target="_blank"><img src="assets/images/if_github_square_black_107109.png" alt="GitHub" class="connect-links"></a>
+					<a href="https://www.linkedin.com/in/laura-ward-b0609b76/" target="_blank"><img src="assets/images/if_linkedin_square_color_107091.png" alt="LinkedIn" class="connect-links"></a>
+					<a href="https://stackoverflow.com/users/8528383/laura-ward" target="_blank"><img src="assets/images/if_stackoverflow_273179.png" alt="StackOverflow" class="connect-links"></a>
+				</div>	
+			</aside>
+			<br>
+		</div>
 	</div>
-	<footer>
-		&copy; Copyright 2017 Laura Ward	
-	</footer>
+		<div class="row">
+			<footer class="col-xs-12 col-sm-12 col-md-12">
+				&copy; Copyright 2017 Laura Ward	
+			</footer>
+		</div>
 </body>
 </html>

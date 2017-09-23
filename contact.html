@@ -3,43 +3,54 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laura Ward</title>
 </head>
 <body>
 
-	<header>
-
-		<div id="name" class="clearfix">
-			<h1>Laura Ward</h1>
+	
+	<header class="header navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<h1 id="name" class="navbar-brand">Laura Ward</h1>
+			</div>
+			<nav class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" class="nav-link">About</a></li>
+						<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+						<li><a href="contact.html" class="nav-link">Contact</a></li>
+					</ul>
+				
+			</nav>
 		</div>
-		<nav>
-			<a href="index.html" class="nav-link">About</a>|
-			<a href="portfolio.html" class="nav-link">Portfolio</a>|
-			<a href="contact.html" class="nav-link">Contact</a>
-		</nav>
 	</header>
 
-	<div id="center">
+	<div id="center" class="container-fluid">
 		<br>
-		<main class="clearfix">
+		<div class="row">
+			<main class="col-xs-12 col-sm-12 col-md-8">
 			<h2>Contact</h2>
-			<div id="contact">
-				<form action="mailto:l-ward@northwestern.edu" method="post" enctype="text/plain">
-					<label>Name:</label><br>
-					<input type="text" name="name" placeholder="John Smith"><br>
-					<label>Email:</label><br>
-					<input type="text" name="mail" placeholder="example@gmail.com"><br>
-					<label>Message:</label><br>
-					<textarea name="message"></textarea><br>
-					<input type="submit" value="Submit">
-				</form>
-			</div>
+			<br>
+				<div id="contact">
+					<form action="mailto:l-ward@northwestern.edu" method="post" enctype="text/plain">
+						<label>Name:</label><br>
+						<input type="text" name="name" placeholder="John Smith"><br>
+						<label>Email:</label><br>
+						<input type="text" name="mail" placeholder="example@gmail.com"><br>
+						<label>Message:</label><br>
+						<textarea name="message"></textarea><br>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
 		</main>
 
-		<aside>
+		<aside class="col-xs-12 col-sm-12 col-md-4">
 			<h3>Connect with Me</h3>
 			<div id="social">
 				<a href="https://github.com/LauraAWard"><img src="assets/images/if_github_square_black_107109.png" alt="GitHub" class="connect-links"></a>
@@ -51,8 +62,11 @@
 
 	</div>
 
-	<footer>
-		&copy; Copyright 2017 Laura Ward	
-	</footer>
-	</body>
+		<div class="row">
+			<footer class="col-xs-12 col-sm-12 col-md-12">
+				&copy; Copyright 2017 Laura Ward	
+			</footer>
+		</div>
+	</div>	
+</body>
 </html>
